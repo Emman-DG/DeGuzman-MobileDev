@@ -18,13 +18,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-    val buttonAdd = findViewById<Button>(R.id.buttonAdd)
-        buttonAdd.setOnClickListener {
-            if (stack == ""){
-                Toast.makeText(applicationContext, "Addition", Toast.LENGTH_LONG).show()
-            }
-
-
     val buttona = findViewById<Button>(R.id.button)
     buttona.setOnClickListener{
         stack += a
@@ -55,11 +48,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         val button3 = findViewById<Button>(R.id.button5)
-        button3.setOnClickListener{
+        button3.setOnClickListener {
             num = num + 3
             Toast.makeText(applicationContext, num.toString(), Toast.LENGTH_LONG).show()
         }
-    }
+
+        
         val buttonSub = findViewById<Button>(R.id.buttonSub)
         buttonSub.setOnClickListener {
             if (stack == ""){
